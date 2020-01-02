@@ -1,0 +1,7 @@
+{
+    // "plugins": [
+    //   ["@babel/plugin-transform-arrow-functions", { "spec": true }]
+    // ],
+
+    "presets": [["@babel/preset-env"]]
+}
