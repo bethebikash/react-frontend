@@ -4,6 +4,9 @@ const webpack = require('webpack')
 const path = require('path')
 
 module.exports = {
+
+    // debugging 
+    devtool:'inline-source-map',
     entry: {
         index: './src/index.js'
     },
@@ -34,6 +37,7 @@ module.exports = {
         contentBase: path.join(__dirname, "public/"),
         port:3000,
         // to serve webpack files
+        hot:true,
         publicPath: 'http://localhost:3000/dist/'
     }
 }
